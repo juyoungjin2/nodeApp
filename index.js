@@ -42,8 +42,8 @@ app.post('/products', async (req, res) => {
 
         })
         .catch(err => {
-            console.log('Oh~~~~~~~~~~~~~~~~~~~~~~~~~')
-            // alert('OH NOO')
+            console.log('Oh~~~~~~~~~~~~~~~~~~~~~~~~~221')
+            console.log(err)
         })
     res.redirect(`/products/${newProduct.id}`)
 
