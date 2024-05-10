@@ -28,36 +28,36 @@ async function main() {
 //         console.log(err)
 //     })
 
-const products = 
+const products = [
     {
         name: 'cherry',
         price: 5.33,
         category: 'fruit'
-    }
-    // {
-    //     name: 'Ruby2',
-    //     price: 1.99,
-    //     category: 'fruit'
-    // },
-    // {
-    //     name: 'Ruby3',
-    //     price: 1.99,
-    //     category: 'fruit'
-    // },
-    // {
-    //     name: 'Ruby4',
-    //     price: 1.99,
-    //     category: 'fruit'
-    // },
+    },
+    {
+        name: 'Ruby2',
+        price: 1.99,
+        category: 'fruit'
+    },
+    {
+        name: 'Ruby3',
+        price: 1.99,
+        category: 'fruit'
+    },
+    {
+        name: 'Ruby4',
+        price: 1.99,
+        category: 'fruit'
+    },
+]
+Product.insertMany(products)
+    .then(res => {
+        console.log(res)
+    })
+    .catch(err => {
+        console.log(err)
+    })
 
-// Product.insertMany(products)
-//     .then(res => {
-//         console.log(res)
-//     })
-//     .catch(err => {
-//         console.log(err)
-//     })
+// const cheerry = new Product(products)
 
-const cheerry = new Product(products)
-
-cheerry.save()
+// cheerry.save()
